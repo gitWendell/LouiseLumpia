@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Registration">
+
+    <TextView
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Register"/>
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_edittext"
+        android:fontFamily="sans-serif-light"
+        android:hint="Name"
+        android:inputType="text"
+        android:padding="12dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Username"
+        android:background="@drawable/custom_edittext"
+        android:fontFamily="sans-serif-light"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:background="@drawable/custom_edittext"
+        android:fontFamily="sans-serif-light"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:padding="12dp" />
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="73dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="140dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button"
+            android:fontFamily="sans-serif-light"
+            android:onClick="login"
+            android:text="BACK"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button"
+            android:fontFamily="sans-serif-light"
+            android:onClick="create"
+            android:text="CREATE"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
